@@ -13,3 +13,6 @@ echo $compute2
 
 compute3=$(($c + $a / $b))
 echo $compute3
+
+compute4=$(($a % $b + $c))
+echo $compute4
