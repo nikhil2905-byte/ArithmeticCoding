@@ -7,3 +7,6 @@ read -p "third number:" c
 
 compute1=$(($a + $b * $c))
 echo $compute1
+
+compute2=$(($a * $b + $c))
+echo $compute2
