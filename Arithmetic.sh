@@ -18,3 +18,9 @@ dictionary[key]=$compute1
 dictionary[key1]=$compute2
 dictionary[key2]=$compute3
 dictionary[key3]=$compute4
+
+count=0;
+for i in ${dictionary[@]}
+do
+	resultArray[((count++))]=$i;
+done
