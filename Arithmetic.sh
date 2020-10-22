@@ -6,13 +6,15 @@ read -p "second number:" b
 read -p "third number:" c
 
 compute1=$(($a + $b * $c))
-echo $compute1
 
 compute2=$(($a * $b + $c))
-echo $compute2
 
 compute3=$(($c + $a / $b))
-echo $compute3
 
 compute4=$(($a % $b + $c))
-echo $compute4
+
+declare -A  dictionary
+dictionary[key]=$compute1
+dictionary[key1]=$compute2
+dictionary[key2]=$compute3
+dictionary[key3]=$compute4
